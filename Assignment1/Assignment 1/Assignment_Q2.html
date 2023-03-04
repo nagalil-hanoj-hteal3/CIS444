@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Display header -->
+    <h1>Newsletter Survey</h1>
+    <!-- For paragraph feature -->
+    <p>Please fill out this form to let us know more about you.</p>
+    <form method = "post" action="">
+        <!-- Text fields for the first/last name and email -->
+        First name: <input type ="text"/><br><br>
+        Last name: <input type = "text"/><br><br>
+        E-mail: <input type ="email"/><br><br>
+        
+        <!-- Strong = Bold, em = Italics -->
+        <!-- This is for favorite topics -->
+        <strong><em>What are your favorite topics:</em></strong><br><br>
+        sports<input type ="checkbox" name ="visit1" value="sports">
+        international news<input type="checkbox" name="visit2" value="international sports">
+        local news<input type="checkbox" name="visit3" value="local news"><br><br>
+        
+        economics<input type="checkbox" name="visit4" value="economics">
+        politics<input type="checkbox" name="visit5" value="politics">
+        technology<input type="checkbox" name="visit6" value="technology">
+
+        <!-- This is the newsletter question -->
+        <br><br><strong><em>How often do you read the newsletter?</em></strong><br><br>
+        Most months<input type="radio" name="where" value="1">
+        Every month<input type ="radio" name="where" value="2">
+        Occasionally<input type="radio" name="where" value="3">
+        Not at all<input type="radio" name="where" value="4">
+
+        <!-- This is the evaluate question-->
+        <br><br><strong><em>How do you evaluate our newspaper?</em></strong>
+        <br><br><label>Comments:</label>
+        <textarea name ="comments" rows="4" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Submit"/>
+        <input type="reset" value="Clear">
+    </form>
+</body

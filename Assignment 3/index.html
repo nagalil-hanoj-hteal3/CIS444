@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW 3</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <script>
+        /*Reference used down below*/
+        /*https://www.javatpoint.com/how-to-find-factorial-of-a-number-in-javascript*/
+        let input = prompt("Input: a number, n");
+        n = Number(input); /*convert string to integer*/
+        /*Outputting the title of the table*/
+        document.write("<table><caption>Factorial Numbers</caption>");
+        /*Output the first row for Number and Corresponding Factorial*/
+        document.write("<tr><th>Number</th><th>Corresponding Factorial</th></tr>");
+        
+        let product = 1;
+        /*Set all the factorial computation inside the function, passing both product and size*/
+        factorial(product, n);
+
+        document.write("</table>"); /*Use to close the table*/
+    
+        /*function called factorial*/
+        function factorial(product, n)
+        {
+            /*loop through each index in the table*/
+            for(i = 0; i <= n; i++){
+                if(i == 0){
+                document.write("<tr class = 'even_row'><td>" + i + "</td><td>0</td></tr>");
+            }else{
+                product *= i;
+                if(i % 2 == 0 )/*even number*/
+                    document.write("<tr class = 'even_row'><td>" + i + "</td><td>" + product + "</td></tr>");
+                else /*odd number*/
+                    document.write("<tr class = 'odd_row'><td>" + i + "</td><td>" + product +"</td></tr>");
+                }
+            }
+            return product;
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,10 @@
+h2{
+    color: red;
+    text-align: center;
+}
+
+#picture {
+   display: none;
+   height: 400px;
+   width: 200px;
+}

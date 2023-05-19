@@ -1,0 +1,21 @@
+/*for optimizing the table color*/
+table{
+    border-collapse: collapse;
+    background-color: white;
+}
+/*Making each border to be a black outline given the format of the table*/
+table, td, th{
+    border: thin solid black;
+}
+/*for every odd number, its color is yellow*/
+tr.odd_row{
+    background-color: yellow;
+}
+/*for every even number, its color is pink*/
+tr.even_row{
+    background-color: pink;
+}
+td{ /*aligning the texts for the table*/
+    text-align: center;
+    /*font-weight: bold;*/
+}

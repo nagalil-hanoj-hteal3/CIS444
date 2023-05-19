@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW4</title>
+
+    <link rel="stylesheet" type="text/css" href = "styles.css">
+
+</head> 
+<body>
+    <header>
+        <h2>Assignment 4<br>Click anywhere on the screen to display image!</h2>
+        <!--<h3>Click! Click! Click!</h3>-->
+    </header>
+
+    <img id="picture" alt="ej_picture" src="https://media.licdn.com/dms/image/C5603AQGzRYRzwqwH2w/profile-displayphoto-shrink_400_400/0/1661731369788?e=1686182400&v=beta&t=Ov_b6HaRIOfFuTOfkjqTvSiPygWD2U_W6Y-y9uJ_SAY">
+
+        
+    <!-- JavaScript functionality -->
+    <script>
+        let p = document.getElementById("picture");
+        window.addEventListener("load", clickPic);
+
+        function clickPic(){
+            window.addEventListener("click", displayPic);
+
+            function displayPic(Exception){
+                
+                let x = Exception.pageX;
+                let y = Exception.pageY;
+
+                p.style.position="absolute";
+                p.style.display="inline";
+                p.style.left = (x - (p.width/2)) +"px";
+                p.style.top= (y - (p.height/2))+"px";
+            }
+        }
+        
+
+
+    </script>
+
+</body>
+</html>

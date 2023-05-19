@@ -1,0 +1,44 @@
+form, h1, #pic{
+    text-align: center;
+}
+
+legend{
+    font-size: 1.5em;
+}
+
+fieldset{
+    width: 200px;
+    display: inline-block;
+}
+
+
+#frame{
+    position: relative;
+    display: inline-block;
+
+}
+
+#browpic{
+    position:absolute;
+    top:160px;
+    left:100px;
+}
+
+#eyepic{
+    position:absolute;
+    top:200px;
+    left:90px;
+}
+
+
+#nosepic{
+    position:absolute;
+    top:270px;
+    left:165px;
+}
+
+#mouthpic{
+    position:absolute;
+    top:325px;
+    left:125px;
+}
